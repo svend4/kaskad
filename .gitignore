@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.sqlite
+golden.json
+build/
+*.egg-info/

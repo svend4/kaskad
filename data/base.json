@@ -1,0 +1,61 @@
+{
+  "faq": [
+    {
+      "id": "persoenliches-budget",
+      "keywords": [
+        ["персональн", "persönlich", "personal"],
+        ["бюджет", "budget"],
+        ["persönliches budget", "персональный бюджет", "инвалид", "behinder", "disab", "sgb", "assistenz", "ассистент", "germany", "deutschland"]
+      ],
+      "answer": {
+        "ru": "Персональный бюджет (§ 29 SGB IX): вместо услуги человек получает деньги и сам оплачивает помощь, например ассистентов. Заявление подают в ведомство, которое отвечает за эту помощь (Rehabilitationsträger), потом с ним заключают Zielvereinbarung (§ 29 Abs. 4 SGB IX).",
+        "de": "Beim Persönlichen Budget (§ 29 SGB IX) wird die Leistung als Geldbetrag erbracht, mit dem die leistungsberechtigte Person ihre Unterstützung selbst einkauft, etwa Assistenz. Beantragt wird es beim zuständigen Rehabilitationsträger; danach wird eine Zielvereinbarung geschlossen (§ 29 Abs. 4 SGB IX).",
+        "en": "In Germany a Persönliches Budget (§ 29 SGB IX) pays the support as money instead of a service, so the person buys the help themselves, for example personal assistants. You apply to the responsible rehabilitation provider (Rehabilitationsträger) and then sign a target agreement (Zielvereinbarung, § 29(4) SGB IX)."
+      }
+    },
+    {
+      "id": "widerspruchsfrist",
+      "keywords": [
+        ["возражени", "обжал", "widerspruch", "appeal"],
+        ["срок", "когда", "подать", "решени", "frist", "bis wann", "bescheid", "deadline", "how long", "decision"]
+      ],
+      "answer": {
+        "ru": "Возражение (Widerspruch) подают в течение месяца с момента, когда решение считается полученным (§ 84 SGG). Письмо по почте считается полученным на четвёртый день после отправки (§ 37 Abs. 2 SGB X). Если в решении нет правильного разъяснения, как его обжаловать, срок — год (§ 66 Abs. 2 SGG).",
+        "de": "Der Widerspruch ist innerhalb eines Monats nach Bekanntgabe des Bescheids einzulegen (§ 84 Abs. 1 SGG); ein Brief gilt am vierten Tag nach Aufgabe zur Post als bekanntgegeben (§ 37 Abs. 2 SGB X). Fehlt die Rechtsbehelfsbelehrung oder ist sie falsch, gilt ein Jahr (§ 66 Abs. 2 SGG).",
+        "en": "In Germany you lodge a Widerspruch with the office within one month of the decision being served (§ 84 SGG); a posted letter counts as served on the fourth day after posting (§ 37(2) SGB X). If the decision lacks correct instructions on how to appeal, the period is one year (§ 66(2) SGG)."
+      }
+    }
+  ],
+  "devices": [
+    {
+      "id": "light",
+      "device": ["свет", "ламп", "licht", "lampe", "light", "lamp"],
+      "states": {
+        "off": ["выключ", "погас", "aus", "ausschalten", "off"],
+        "on": ["включ", "зажг", "an", "ein", "einschalten", "on"]
+      },
+      "services": {"on": "light.turn_on", "off": "light.turn_off"},
+      "areas": {
+        "kitchen": ["кухн", "küche", "kitchen"],
+        "living_room": ["гостин", "зал", "wohnzimmer", "living room"],
+        "bedroom": ["спальн", "schlafzimmer", "bedroom"]
+      },
+      "area_names": {
+        "kitchen": {"ru": "на кухне", "de": "in der Küche", "en": "in the kitchen"},
+        "living_room": {"ru": "в гостиной", "de": "im Wohnzimmer", "en": "in the living room"},
+        "bedroom": {"ru": "в спальне", "de": "im Schlafzimmer", "en": "in the bedroom"}
+      },
+      "everywhere": {"ru": "везде", "de": "überall", "en": "everywhere"},
+      "replies": {
+        "on": {"ru": "Включаю свет {area}.", "de": "Ich schalte das Licht {area} ein.", "en": "Turning the light on {area}."},
+        "off": {"ru": "Выключаю свет {area}.", "de": "Ich schalte das Licht {area} aus.", "en": "Turning the light off {area}."}
+      }
+    }
+  ],
+  "encyclopedia": [
+    {"title": "Recursion", "body": "Recursion is when a function solves a problem by calling itself on a smaller part of it, until it reaches a base case that it answers directly. In Python a recursive function needs that base case, or it stops with RecursionError after about a thousand nested calls."},
+    {"title": "Рекурсия", "body": "Рекурсия — это когда функция решает задачу, вызывая саму себя для меньшей части задачи, пока не дойдёт до простого случая, который решается напрямую."},
+    {"title": "Dresden", "body": "Dresden is the capital of the Free State of Saxony in Germany, on the river Elbe."},
+    {"title": "Eingliederungshilfe", "body": "Die Eingliederungshilfe für Menschen mit Behinderungen ist seit 2020 in Teil 2 des SGB IX geregelt; sie soll die volle, wirksame und gleichberechtigte Teilhabe am Leben in der Gesellschaft fördern."}
+  ]
+}

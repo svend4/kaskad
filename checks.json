@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {"ask": "включи свет на кухне", "module": "base", "level": 3,
+     "action": {"service": "light.turn_on", "area": "kitchen"}},
+    {"ask": "mach das Licht im Wohnzimmer aus", "module": "base",
+     "action": {"service": "light.turn_off", "area": "living_room"}},
+    {"ask": "turn on the lights in the bedroom", "module": "base",
+     "action": {"service": "light.turn_on", "area": "bedroom"}},
+    {"ask": "выключи свет", "module": "base",
+     "action": {"service": "light.turn_off", "area": null}},
+
+    {"ask": "Wie beantrage ich ein Persönliches Budget?", "module": "base",
+     "contains": ["§ 29 SGB IX", "Zielvereinbarung"], "action": null},
+    {"ask": "Как получить персональный бюджет?", "module": "base", "contains": "Rehabilitationsträger"},
+    {"ask": "What is a personal budget for disabled people in Germany?", "module": "base",
+     "contains": "Persönliches Budget"},
+    {"ask": "how do i make a personal budget for my household?", "module": "floor", "unknown": true},
+    {"ask": "Как подать возражение и какой срок?", "module": "base", "contains": ["§ 84 SGG", "§ 66 Abs. 2 SGG"]},
+    {"ask": "Bis wann muss ich Widerspruch einlegen?", "module": "base", "contains": "innerhalb eines Monats"},
+
+    {"ask": "Explain recursion in Python", "module": "encyclopedia", "level": 4, "unknown": false,
+     "contains": "RecursionError"},
+    {"ask": "Was ist Eingliederungshilfe?", "module": "encyclopedia", "contains": "Teil 2 des SGB IX"},
+    {"ask": "Привет! Как дела?", "module": "floor", "unknown": true},
+
+    {"steps": [
+      {"ask": "меня зовут Макс", "module": "name", "contains": "Макс"},
+      {"ask": "включи свет на кухне", "action": {"service": "light.turn_on", "area": "kitchen"}},
+      {"ask": "включи свет на кухне", "module": "base", "action": {"service": "light.turn_on", "area": "kitchen"}},
+      {"ask": "как меня зовут?", "module": "name", "contains": "Макс"}
+    ]},
+    {"steps": [
+      {"ask": "what's my name?", "module": "name", "contains": "haven't told me"}
+    ]}
+  ]
+}

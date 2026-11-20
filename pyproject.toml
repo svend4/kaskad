@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaskad"
+version = "0.1.0"
+description = "Rule-first assistant frame with a language model as the last level (standard library only)"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+kaskad = "kaskad.__main__:main"
+
+[tool.setuptools]
+packages = ["kaskad"]

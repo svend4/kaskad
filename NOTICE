@@ -1,0 +1,9 @@
+kaskad
+Copyright 2026 the kaskad authors
+
+This product includes software derived from PyBot (https://github.com/huggingface/pybot),
+licensed under the Apache License, Version 2.0. kaskad/runtime.py is based on PyBot's
+bot/runtime.py. Changes: modules are loaded from folders of plain files; respond() may return
+structured answers with an action, a confidence and an "unknown" mark; each call runs in its own
+thread under a deadline per turn; the arbiter is passed in; a turn reports skipped modules and
+its duration; the stored history is capped.
